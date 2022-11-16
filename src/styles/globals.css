@@ -1,3 +1,71 @@
 @tailwind base;
+
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "YEEZY-REGULAR";
+  src: url("/../public/fonts/yeezy/yeezy_tstar-regular-webfont.ttf");
+}
+
+@font-face {
+  font-family: "YEEZY-LIGHT";
+  src: url("/../public/fonts/yeezy/yeezy_tstar-light-webfont.ttf");
+}
+
+@font-face {
+  font-family: "YEEZY-HEAVY";
+  src: url("/../public/fonts/yeezy/yeezy_tstar-heavy-webfont.ttf");
+}
+
+@font-face {
+  font-family: "YEEZY-BOLD";
+  src: url("/../public/fonts/yeezy/yeezy_tstar-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "YEEZY-MONO";
+  src: url("/../public/fonts/yeezy/VCR_OSD_MONO_1.001.ttf");
+}
+
+@font-face {
+  font-family: "LIB-REG";
+  src: url("/../public/fonts/liberation_mono/LiberationMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LIB-BOLD";
+  src: url("/../public/fonts/liberation_mono/LiberationMono-Bold.ttf");
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  button {
+    @apply rounded-xl bg-gradient-to-r from-[#5651e5] to-[#709dff] uppercase text-white shadow-xl shadow-gray-400;
+  }
+}
